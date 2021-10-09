@@ -1,6 +1,6 @@
 # SUMÀRIO
 
-- [O que vamos aprender?](#aprender)
+- [O que vamos aprender?](#o-que-vamos-aprender)
 
 ### Você será capaz de:
 
@@ -27,6 +27,6 @@
 ## Recursos adicionais (opcional)
 
 
-# aprender?
+# O que vamos aprender?
 Bem-vindo de volta! Hoje você vai aprender a utilizar os diferentes tipos de JOIN para juntar dados relacionados em um banco de dados.
 
