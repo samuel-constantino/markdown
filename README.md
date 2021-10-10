@@ -16,6 +16,11 @@
 - [Vamos Praticar](#vamos-praticar)
 
 - [Exercícios](#exercícios)
+  
+  - [Agora a prática](#agora-a-prática)
+  - [Bônus](#bônus)
+  
+- [Recursos adicionais (opcional)](#recursos-adicionais-opcional)
 
 # O que vamos aprender?
 
