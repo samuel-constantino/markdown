@@ -2,31 +2,44 @@
 
 - [O que vamos aprender?](#o-que-vamos-aprender)
 
-### Você será capaz de:
+  - [Você será capaz de:](#você-será-capaz-de)
+ 
+- [Por que isso é importante?](#por-que-isso-é-importante)
 
-## Por que isso é importante?
+- [Conteúdos](#conteúdos)
 
-## Conteúdos
+  - [JOIN](#join)
+  - [INNER JOIN](#inner-join)
+  - [LEFT JOIN e RIGHT JOIN](#left-join-e-right-join)
+  - [SELF JOIN](#self-join)
 
-### ...JOIN
+- [Vamos Praticar](#vamos-praticar)
 
-### ...INNER JOIN
+- [Exercícios](#exercícios)
 
-### ...LEFT JOIN e RIGHT JOIN
+# O que vamos aprender?
 
-### ...SELF JOIN
+## Você será capaz de
 
-## Vamos praticar!
+# Por que isso é importante?
 
-## Exercícios
+# Conteúdos
+
+## JOIN
+
+## INNER JOIN
+
+## LEFT JOIN e RIGHT JOIN
+
+## SELF JOIN
+
+# Vamos praticar!
+
+# Exercícios
 
 ### Agora a prática
 
 ### Bônus
 
-## Recursos adicionais (opcional)
-
-
-# O que vamos aprender?
-Bem-vindo de volta! Hoje você vai aprender a utilizar os diferentes tipos de JOIN para juntar dados relacionados em um banco de dados.
+# Recursos adicionais (opcional)
 
