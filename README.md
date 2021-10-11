@@ -8,7 +8,7 @@
 
 - [Conteúdos](#conteúdos)
 
-  - [JOIN](#join)
+  - [O que é um JOIN?](#o-que-é-um-join)
   - [INNER JOIN](#inner-join)
   - [LEFT JOIN e RIGHT JOIN](#left-join-e-right-join)
   - [SELF JOIN](#self-join)
@@ -55,7 +55,13 @@ Em algum momento na sua carreira como desenvolvedor de software, é provável qu
 
 # Conteúdos
 
-## JOIN
+## O que é um JOIN?
+
+Até agora, você aprendeu a manipular uma tabela para diversos fins, executando operações simples de inserção, seleção, alteração e exclusão ([CRUD](https://developer.mozilla.org/pt-BR/docs/Glossary/CRUD)), até operações mais específicas como selecionar, classificar e/ou agrupar os dados para melhorar a visualização em seus relatórios. Porém, há situações em que uma única tabela não possui todos os dados necessários para gerar as informações que você precisa. É nesse momento em que o conceito de **JOIN** entra em jogo.
+
+O **JOIN** é um recurso do SQL para **combinar** os registros de duas ou mais tabelas em uma única consulta, com base em uma coluna relacionada entre elas.
+
+A partir de agora você será capaz de **juntar** os dados de duas ou mais tabelas por meio do **JOIN** e aplicar todo conhecimento adquirido anteriormente para gerar relatórios mais completos e detalhados. Essa **junção** pode ser feita de várias formas, veremos mais sobre os tipos de **JOIN** ainda hoje!
 
 ## INNER JOIN
 
