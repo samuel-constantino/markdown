@@ -63,7 +63,29 @@ O **JOIN** é um recurso do SQL para **combinar** os registros de duas ou mais t
 
 A partir de agora você será capaz de **juntar** os dados de duas ou mais tabelas por meio do **JOIN** e aplicar todo conhecimento adquirido anteriormente para gerar relatórios mais completos e detalhados. Essa **junção** pode ser feita de várias formas, veremos mais sobre os tipos de **JOIN** ainda hoje!
 
+![Dragon JOIN Ball](https://c.tenor.com/1wJU51jgwSQAAAAC/dbz-dragonball.gif)
+
 ## INNER JOIN
+
+O INNER JOIN seleciona os dados correspondentes entre duas ou 
+mais tabelas conectadas por uma coluna em comum. Confira sua sintaxe básica:
+```
+SELECT t1.coluna, t2.coluna
+FROM tabela1 AS t1
+INNER JOIN tabela2 AS t2
+ON t1.coluna_em_comum = t2.coluna_em_comum;
+```
+
+Note que na sintaxe acima é usado o *alias* (**AS**) para nomear temporariamente as tabelas. O alias não é necessário para o sucesso da *query*, mas usá-lo é uma
+boa prática, pois torna o nome das colunas mais legíveis e facilita usá-las em outras partes do código. Clique [nesse link](https://www.w3schools.com/sql/sql_alias.asp) para saber mais sobre *alias*.
+
+É possível representar o efeito do INNER JOIN por meio da [teoría dos conjuntos](https://www.todamateria.com.br/teoria-dos-conjuntos/), da seguinte forma:
+
+![imagem-inner-join](https://www.w3schools.com/sql/img_innerjoin.gif)
+
+No exemplo acima, o resultado do INNER JOIN é a interseção entre as duas tabelas.
+
+
 
 ## LEFT JOIN e RIGHT JOIN
 
