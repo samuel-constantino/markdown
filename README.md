@@ -90,7 +90,7 @@ boa prática, pois torna o nome das colunas mais legíveis e facilita usá-las e
 
 Para os exemplos a seguir, será utilizado o banco de dados público [sakila](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sakila-1ae15ae82697888c35bf1f1c8acbf755.sql).
 
-#### 1. Utilize INNER JOIN para gerar duas colunas. As colunas devem buscar, respectivamente: O nome das cidades (**city**) e o país referente a cada cidade (**country**).
+1. Utilize INNER JOIN para gerar duas colunas. As colunas devem buscar, respectivamente: O nome das cidades (**city**) e o país referente a cada cidade (**country**).
 
 ```
 SELECT 
@@ -103,7 +103,7 @@ FROM
 ```
 Também é possível utilizar o INNER JOIN mais de uma vez na mesma **query**, segue o exemplo:
 
-#### 2. Utilize INNER JOIN para gerar três colunas. As colunas devem buscar, respectivamente: O nome completo dos clientes (**customer**), o endereço referente a cada cliente e o país referente a cada endereço encontrado. Os nomes das colunas devem ser, respectivamente: "Nome_Completo", "Endereço", "Cidade"
+2. Utilize INNER JOIN para gerar três colunas. As colunas devem buscar, respectivamente: O nome completo dos clientes (**customer**), o endereço referente a cada cliente e o país referente a cada endereço encontrado. Os nomes das colunas devem ser, respectivamente: "Nome_Completo", "Endereço", "Cidade"
 
 ```
 SELECT 
@@ -121,10 +121,17 @@ FROM
 ### Desafios
 
 Para os desafios a seguir, também será utilizado o banco de dados público [sakila](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sakila-1ae15ae82697888c35bf1f1c8acbf755.sql).
+Implemente *queries* utilizando o **INNER JOIN** para:
 
-1. Crie uma *query* utilizando o **INNER JOIN** para retornar duas colunas nomeadas por “Título” e “Língua”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas línguas. Use as tabelas **film** e **language**.
+1. Gerar duas colunas nomeadas por “Título” e “Língua”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas línguas. Use as tabelas **film** e **language**.
 
-2. Crie uma *query* utilizando o **INNER JOIN** para retornar duas colunas nomeadas por “Título” e “Categoria”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas categorias. Use as tabelas **film_category**, **film** e **category**
+2. Gerar duas colunas nomeadas por “Título” e “Categoria”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas categorias. Use as tabelas **film_category**, **film** e **category**.
+
+3. Gerar duas colunas nomeadas por "Loja_Id", e "Gerente", respectivamente, com registros sobre os *ids* das lojas, e os nomes completos dos gerentes. Use as tabelas **store**, e **staff**.
+
+4. Gerar três colunas nomeadas por "Cliente_Id", "Cliente", e "Endereço_Loja", respectivamente, com registros sobre os *ids* dos clientes, seus nomes completos e os endereços das loja que são cadastrados. Use as tabelas **customer**, **store** e **address**.
+
+5. Gerar quatro colunas nomeadas por "Alugel_Id", "Filme", "Data_Aluguel" e "Data_Retorno", respectivamente, com registros sobre os ids dos aluguéis, os nomes dos filmes alugados e suas datas de aluguéis e devoluções. Use as tabelas rental, inventory e film.
 
 ## LEFT JOIN e RIGHT JOIN
 
@@ -133,6 +140,8 @@ Para os desafios a seguir, também será utilizado o banco de dados público [sa
 # Vamos praticar!
 
 # Exercícios
+
+1. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo dos clientes e funcionários. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
 
 ### Agora a prática
 
