@@ -31,7 +31,26 @@ FROM
 	sakila.category AS cat ON fc.category_id = cat.category_id;
 ```
 
-**Exercício 3:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo dos clientes e funcionários. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
+**Exercício 3:** Gerar quatro colunas nomeadas por "Alugel_Id", "Filme", "Data_Aluguel" e "Data_Retorno", respectivamente, com registros sobre os *ids* dos aluguéis, os nomes dos filmes alugados e suas datas de aluguéis e devoluções. Use as tabelas **rental**, **inventory** e **film**.
+
+### Solução
+```
+SELECT 
+    ren.rental_id AS `Aluguel_Id`,
+    fil.title AS `Filme`,
+    ren.rental_date AS `Aluguel_Data`,
+    ren.return_date AS `Aluguel_Retorno`
+FROM
+    sakila.rental AS ren
+        INNER JOIN
+    sakila.inventory AS inv ON ren.inventory_id = inv.inventory_id
+        INNER JOIN
+    sakila.film AS fil ON inv.film_id = fil.film_id;
+```
+
+## Exercícios
+
+**Exercício 1:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo dos clientes e funcionários. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
 
 ### Solução
 ```
