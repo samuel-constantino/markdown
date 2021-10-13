@@ -56,7 +56,9 @@ O **JOIN** é um recurso do SQL para **combinar** os registros de duas ou mais t
 
 A partir de agora você será capaz de **juntar** os dados de duas ou mais tabelas por meio do **JOIN**. Essa **junção** pode ser feita de várias formas, veremos mais sobre os tipos de **JOIN** ainda hoje!
 
-![Dragon JOIN Ball](https://c.tenor.com/1wJU51jgwSQAAAAC/dbz-dragonball.gif)
+<div align="center">
+  <img src="https://c.tenor.com/1wJU51jgwSQAAAAC/dbz-dragonball.gif" alt="Dragon JOIN Ball" width="500"/>
+</div>
 
 ## INNER JOIN
 
@@ -78,7 +80,9 @@ boa prática, pois torna o nome das colunas mais legíveis e facilita usá-las e
 
 É possível representar o efeito do INNER JOIN por meio da [teoría dos conjuntos](https://www.todamateria.com.br/teoria-dos-conjuntos/) da seguinte forma:
 
-![imagem-inner-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/innerjoin-dcdd0d7b81d1843386871875fc408dd4.png)
+<div align="center">
+  <img src="https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/innerjoin-dcdd0d7b81d1843386871875fc408dd4.png" alt="imagem-inner-join" width="250"/>
+</div>
 
 ### Exemplos
 
@@ -98,7 +102,9 @@ FROM
 
 O resultado da consulta acima será parecido com o seguinte formato:
 
-![consulta-inner-join-exemplo-1](https://i.ibb.co/GF3wyJ3/Captura-de-tela-de-2021-10-13-01-54-41.png)
+<div align="center">
+  <img src="https://i.ibb.co/GF3wyJ3/Captura-de-tela-de-2021-10-13-01-54-41.png" alt="consulta-inner-join-exemplo-1" width="400"/>
+</div>
 
 Também é possível utilizar o INNER JOIN mais de uma vez na mesma **query**, segue o exemplo:
 
@@ -120,7 +126,9 @@ FROM
 
 O resultado da consulta acima será parecido com o seguinte formato:
 
-![consulta-inner-join-exemplo-2](https://i.ibb.co/wzfwshW/Captura-de-tela-de-2021-10-13-02-04-22.png)
+<div align="center">
+  <img src="https://i.ibb.co/D4MXcGg/Captura-de-tela-de-2021-10-13-20-38-12.png" alt="consulta-inner-join-exemplo-2" width="400"/>
+</div>
 
 ### Desafios
 
@@ -168,7 +176,9 @@ FROM
 
 O resultado da consulta acima será parecido com o seguinte formato:
 
-![consulta-left-join-exemplo-1](https://i.ibb.co/M2XXhg0/Captura-de-tela-de-2021-10-13-02-18-47.png)
+<div align="center">
+  <img src="https://i.ibb.co/M2XXhg0/Captura-de-tela-de-2021-10-13-02-18-47.png" alt="consulta-left-join-exemplo-1" width="400"/>
+</div>
 
 Observação: Note que ao usar o **LEFT JOIN** os campos que não possuem dados relacionados a sua coluna de referência são preenchidos automaticamente com valor **null**. É possível observar um comportamento semelhante ao usar o **RIGHT JOIN**.
 
@@ -188,7 +198,9 @@ FROM
 
 O resultado da consulta acima será parecido com o seguinte formato:
 
-![consulta-left-join-exemplo-2](https://i.ibb.co/MsDs9Rb/Captura-de-tela-de-2021-10-13-02-25-05.png)
+<div align="center">
+  <img src="https://i.ibb.co/MsDs9Rb/Captura-de-tela-de-2021-10-13-02-25-05.png" alt="consulta-left-join-exemplo-2" width="400"/>
+</div>
 
 E se nosso objetivo mudasse novamente e agora precisaremos manter apenas os registros que possuem relação entre as colunas da esquerda e direita? Para isso usamos o já conhecido **INNER JOIN**:
 ```
@@ -205,21 +217,29 @@ FROM
 
 O resultado da consulta acima será parecido com o seguinte formato:
 
-![consulta-left-join-exemplo-3](https://i.ibb.co/9g9Zzhj/Captura-de-tela-de-2021-10-13-02-27-20.png)
+<div align="center">
+  <img src="https://i.ibb.co/9g9Zzhj/Captura-de-tela-de-2021-10-13-02-27-20.png" alt="consulta-left-join-exemplo-3" width="400"/>
+</div>
 
 É possível utilizar a [teoría dos conjuntos](https://www.todamateria.com.br/teoria-dos-conjuntos/) novamente para abstrair o conceito dos **JOIN** e representar a diferença entre o **LEFT JOIN**, **RIGHT JOIN** e **INNER JOIN**.
 
 **LEFT JOIN**: Sempre retornará todos os registros da(s) coluna(s) da **esquerda** e os registros correspondentes da direita. 
 
-![representação-left-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/leftjoin-3bd116be2c7d08ac759c74353260cfea.png)
+<div align="center">
+  <img src="https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/leftjoin-3bd116be2c7d08ac759c74353260cfea.png" alt="representação-left-join" width="250"/>
+</div>
 
 **RIGHT JOIN**: Sempre retornará todos os registros da(s) coluna(s) da **direita** e os registros correspondentes da esquerda. 
 
-![representação-right-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/rightjoin-f8109b9bb4ea1ed927109d1e19a1a262.png)
+<div align="center">
+  <img src="https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/rightjoin-f8109b9bb4ea1ed927109d1e19a1a262.png" alt="representação-right-join" width="250"/>
+</div>
 
 **INNER JOIN**: Sempre retornará apenas os registros correspondentes, ignorando os demais registros.
 
-![imagem-inner-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/innerjoin-dcdd0d7b81d1843386871875fc408dd4.png)
+<div align="center">
+  <img src="https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/innerjoin-dcdd0d7b81d1843386871875fc408dd4.png" alt="imagem-inner-join" width="250"/>
+</div>
 
 Os diferentes tipos de **JOIN** podem parecer confusos no início do aprendizado. Sinta-se à vontade para ler quantas vezes forem necessárias, reflita um pouco sobre os conceitos aprendidos até o momento e sempre pratique para complementar e consolidar sua leitura.
 
