@@ -11,7 +11,6 @@
   - [O que é um JOIN?](#o-que-é-um-join)
   - [INNER JOIN](#inner-join)
   - [LEFT JOIN e RIGHT JOIN](#left-join-e-right-join)
-  - [FULL JOIN](#full-join)
   - [SELF JOIN](#self-join)
 
 - [Vamos Praticar](#vamos-praticar)
@@ -39,9 +38,6 @@ tabela (direita);
 - Utilizar **RIGHT JOIN** para selecionar todos registros de uma
 tabela (direita) e os registros correspondentes de outra 
 tabela (esquerda);
-
-- Utilizar **FULL JOIN** para selecionar todos os registros 
-quando há correspondência entre as tabelas (esquerda e direita)
 
 - Utilizar **SELF JOIN** para juntar uma tabela com 
 ela própria (auto-junção)
@@ -82,7 +78,7 @@ boa prática, pois torna o nome das colunas mais legíveis e facilita usá-las e
 
 É possível representar o efeito do INNER JOIN por meio da [teoría dos conjuntos](https://www.todamateria.com.br/teoria-dos-conjuntos/) da seguinte forma:
 
-![imagem-inner-join](https://www.w3schools.com/sql/img_innerjoin.gif)
+![imagem-inner-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/innerjoin-dcdd0d7b81d1843386871875fc408dd4.png)
 
 ### Exemplos
 
@@ -215,21 +211,19 @@ O resultado da consulta acima será parecido com o seguinte formato:
 
 **LEFT JOIN**: Sempre retornará todos os registros da(s) coluna(s) da **esquerda** e os registros correspondentes da direita. 
 
-![representação-left-join](https://www.w3schools.com/sql/img_leftjoin.gif)
+![representação-left-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/leftjoin-3bd116be2c7d08ac759c74353260cfea.png)
 
 **RIGHT JOIN**: Sempre retornará todos os registros da(s) coluna(s) da **direita** e os registros correspondentes da esquerda. 
 
-![representação-right-join](https://www.w3schools.com/sql/img_rightjoin.gif)
+![representação-right-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/rightjoin-f8109b9bb4ea1ed927109d1e19a1a262.png)
 
 **INNER JOIN**: Sempre retornará apenas os registros correspondentes, ignorando os demais registros.
 
-![imagem-inner-join](https://www.w3schools.com/sql/img_innerjoin.gif)
+![imagem-inner-join](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/images/innerjoin-dcdd0d7b81d1843386871875fc408dd4.png)
 
 Os diferentes tipos de **JOIN** podem parecer confusos no início do aprendizado. Sinta-se à vontade para ler quantas vezes forem necessárias, reflita um pouco sobre os conceitos aprendidos até o momento e sempre pratique para complementar e consolidar sua leitura.
 
 Dica: Pesquise e baixe bases de dados com informações relevantes para você (filmes, jogos, criptomoedas, etc.) e aplique os conceitos que vem aprendendo nesses bancos de dados. Personalize seus estudos para torná-los mais interessantes!
-
-## FULL JOIN
 
 ## SELF JOIN
 
