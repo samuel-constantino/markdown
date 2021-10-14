@@ -247,7 +247,7 @@ Dica: Pesquise e baixe bases de dados com informações relevantes para você (f
 
 ## SELF JOIN
 
-Até o momento, aprendemos sobre os tipos de **JOIN** que usam mais de uma tabela para comparar registros e gerar consultas mais detalhadas. Porém, há situações em que precisamos comparar registros da mesma tabela. Por causa disso foi criado o conceito de **SELF JOIN**, que tem como objetivo criar uma “cópia” da tabela alvo para poder relacioná-la com ela mesma. Essa ação também é conhecida como auto-junção.
+Até o momento, aprendemos sobre os tipos de **JOIN** que usam mais de uma tabela para comparar registros e gerar relatórios mais detalhados. Porém, há situações em que precisamos comparar registros da mesma tabela. Por causa disso foi criado o conceito de **SELF JOIN**, que tem como objetivo criar um **JOIN** com a própria tabela. Essa ação também é conhecida como **auto junção**.
 
 A sintaxe <s>diferentona</s> básica do **SELF JOIN**:
 
@@ -262,13 +262,15 @@ WHERE
   condition;
 ```
 
+Na sintaxe acima o **FROM** referencia a mesma tabela duas vezes com diferentes *alias*, tratando-as como tabelas diferentes para depois aplicar uma junção por meio da condição do **WHERE**
+
 ### Exemplos
   
-Para entender melhor esse conceito, observe o exemplo a seguir:
+Para entender melhor esse conceito, observe os exemplos a seguir:
 
 Continuaremos utilizando o banco de dados [sakila](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sakila-1ae15ae82697888c35bf1f1c8acbf755.sql).
 
-A tabela **actor** possui registros com o nome de todas as pessoas atrizes do banco de dados. Como podemos criar uma *query* que nos retorne um relatório que exiba duas colunas relacionando os atores que possuem o mesmo sobrenome?
+1. A tabela **actor** possui registros com o nome de todas as pessoas atrizes do banco de dados. Como podemos criar uma *query* que nos retorne um relatório que exiba duas colunas relacionando os atores que possuem o mesmo sobrenome?
 Note que para criarmos essa *query* precisamos relacionar os registros da tabela **actor** com ela mesma para comparar os sobrenomes das pessoas atrizes.
 
 ```
@@ -289,14 +291,36 @@ O resultado da consulta acima será parecido com o seguinte formato:
   <img src="https://i.ibb.co/ZYFsnRS/Captura-de-tela-de-2021-10-13-21-13-15.png" alt="consulta-self-join-exemplo-1" width="400"/>
 </div>
   
+2. A tabela **film** possui registros com as informações de todos os filmes do banco de dados. Como podemos criar uma *query* que nos retorne um relatório que exiba três colunas: A primeira exibindo o tamanho dos filmes, e a segunda e terceira coluna relacionando os filmes que possuem o tamanho igual ao informado na primeira coluna? 
+
+```
+SELECT 
+    t1.length, t1.title, t2.title
+FROM
+    sakila.film AS t1,
+    sakila.film AS t2
+WHERE
+    t1.film_id <> t2.film_id
+        AND t1.length = t2.length;
+
+```
+
+### Desafios
+
+Para os desafios a seguir, também será utilizado o banco de dados público [sakila](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sakila-1ae15ae82697888c35bf1f1c8acbf755.sql).
+Implemente *queries* utilizando o **SELF JOIN* para:
+
+1. Gerar três colunas nomeadas por "Primeiro_Nome", "T1_Sobrenome" e "T2_Sobrenome", respectivamente, 
+com registros sobre os primeiros nomes das pessoas atrizes e os sobrenomes que estão relacionados aos
+registros da coluna "Primeiro_Nome". Certifique-se que não haverá sobrenomes com o mesmo *id*.
 
 # Vamos praticar!
 
 # Exercícios
 
-1. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo dos clientes e funcionários. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
-
 ### Agora a prática
+
+1. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo dos clientes e funcionários. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
 
 ### Bônus
 
