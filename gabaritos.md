@@ -115,10 +115,43 @@ WHERE
 
 ## Exercícios
 
+**Exercício 1:** Imagine a seguinte situação: Você está desenvolvendo uma aplicação que precisa buscar informações sobre os nomes dos países presentes em um banco de dados relacional e suas respectivas regiões. Mas essas informações estão em tabelas diferentes. Como você criaria uma *query* resolver essa situação?
+<br/>Observações: Nomeie as tabelas com "Páis" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
+<br/>Dica: Use as tabelas **countries** e **regions**.
+
+### Solução
+
+```
+SELECT 
+    pa.COUNTRY_NAME AS `País`,
+    re.REGION_NAME AS `Região`
+FROM
+    hr.countries AS pa
+        INNER JOIN
+    hr.regions AS re ON pa.REGION_ID = re.REGION_ID
+ORDER BY `País`;
+
+```
+
+**Exercício 2:**
+
+### Solução
+
+**Exercício 3:**
+
+### Solução
+
+**Exercício 4:**
+
+### Solução
+
+**Exercício 5:**
+
+### Solução
 
 ## Bônus
 
-**Exercício 1:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nomes completos das pessoas clientes e pessoas funcionárias:
+**Exercício 6:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nomes completos das pessoas clientes e pessoas funcionárias:
 <br/>Dica: Utilize as tabelas **rental**, **inventory**, **film**, **staff**.
 <br/>Dica: Utilize mais de um **JOIN**.
 
@@ -142,7 +175,7 @@ FROM
 
 ```
 
-**Exercício 2:** Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros sobre o nome completo das pessoas Atrizes que possuam o mesmo nome completo dos clientes, e os *ids* das pessoas Atrizes e Clientes.
+**Exercício 7:** Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros sobre o nome completo das pessoas Atrizes que possuam o mesmo nome completo dos clientes, e os *ids* das pessoas Atrizes e Clientes.
 Dica: Use as tabelas **actor** e **customer**.
 
 ### Solução
