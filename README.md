@@ -247,6 +247,49 @@ Dica: Pesquise e baixe bases de dados com informações relevantes para você (f
 
 ## SELF JOIN
 
+Até o momento, aprendemos sobre os tipos de **JOIN** que usam mais de uma tabela para comparar registros e gerar consultas mais detalhadas. Porém, há situações em que precisamos comparar registros da mesma tabela. Por causa disso foi criado o conceito de **SELF JOIN**, que tem como objetivo criar uma “cópia” da tabela alvo para poder relacioná-la com ela mesma. Essa ação também é conhecida como auto-junção.
+
+A sintaxe <s>diferentona</s> básica do **SELF JOIN**:
+
+```
+SELECT
+  t1.coluna,
+  t2.coluna
+FROM
+  table1 AS T1,
+  table1 AS T2
+WHERE
+  condition;
+```
+
+### Exemplos
+  
+Para entender melhor esse conceito, observe o exemplo a seguir:
+
+Continuaremos utilizando o banco de dados [sakila](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sakila-1ae15ae82697888c35bf1f1c8acbf755.sql).
+
+A tabela **actor** possui registros com o nome de todas as pessoas atrizes do banco de dados. Como podemos criar uma *query* que nos retorne um relatório que exiba duas colunas relacionando os atores que possuem o mesmo sobrenome?
+Note que para criarmos essa *query* precisamos relacionar os registros da tabela **actor** com ela mesma para comparar os sobrenomes das pessoas atrizes.
+
+```
+SELECT 
+    CONCAT(t1.first_name, ' ', t1.last_name) AS `T1`,
+    CONCAT(t2.first_name, ' ', t2.last_name) AS `T2`
+FROM
+    sakila.actor AS t1,
+    sakila.actor AS t2
+WHERE
+    t1.actor_id <> t2.actor_id
+        AND t1.last_name = t2.last_name;
+
+```
+O resultado da consulta acima será parecido com o seguinte formato:
+
+<div align="center">
+  <img src="https://i.ibb.co/ZYFsnRS/Captura-de-tela-de-2021-10-13-21-13-15.png" alt="consulta-self-join-exemplo-1" width="400"/>
+</div>
+  
+
 # Vamos praticar!
 
 # Exercícios
