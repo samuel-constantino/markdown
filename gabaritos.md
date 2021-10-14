@@ -137,9 +137,24 @@ ORDER BY `País`;
 
 ### Solução
 
-**Exercício 3:**
+**Exercício 3:** Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
+<br/>Obeservação: Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
+<br/>Dica: Use as tabelas **employees**, **departments** e **jobs**
 
 ### Solução
+
+SELECT 
+    emp.EMPLOYEE_ID AS `Funcionário_Id`,
+    CONCAT(emp.FIRST_NAME, ' ', LAST_NAME) AS `Funcionário`,
+    job.JOB_TITLE AS `Função`,
+    dep.DEPARTMENT_NAME AS `Departamento`
+FROM
+    hr.employees AS emp
+		INNER JOIN
+	hr.jobs AS job ON emp.JOB_ID = job.JOB_ID
+		INNER JOIN
+	hr.departments AS dep ON emp.DEPARTMENT_ID = dep.DEPARTMENT_ID
+ORDER BY `Funcionário`
 
 **Exercício 4:**
 
