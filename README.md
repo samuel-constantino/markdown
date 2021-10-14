@@ -453,6 +453,12 @@ Implemente a resolução dos exercícios propostos utilizando o banco de dados [
 <br/>Observações: Nomeie as tabelas com "País" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
 <br/>Dica: Use as tabelas **countries** e **regions**.
 
+2.
+
+3. Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
+<br/>Obeservação: Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
+<br/>Dica: Use as tabelas **employees**, **departments** e **jobs**
+
 ### Bônus
 
 6. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo dos clientes e funcionários. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
