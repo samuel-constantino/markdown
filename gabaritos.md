@@ -115,6 +115,9 @@ WHERE
 
 ## Exercícios
 
+
+## Bônus
+
 **Exercício 1:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nomes completos das pessoas clientes e pessoas funcionárias:
 <br/>Dica: Utilize as tabelas **rental**, **inventory**, **film**, **staff**.
 <br/>Dica: Utilize mais de um **JOIN**.
@@ -138,8 +141,6 @@ FROM
     sakila.staff AS sta ON ren.staff_id = sta.staff_id;
 
 ```
-
-## Bônus
 
 **Exercício 2:** Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros sobre o nome completo das pessoas Atrizes que possuam o mesmo nome completo dos clientes, e os *ids* das pessoas Atrizes e Clientes.
 Dica: Use as tabelas **actor** e **customer**.
