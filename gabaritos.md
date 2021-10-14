@@ -94,6 +94,25 @@ FROM
 
 ```
 
+## SELF JOIN
+
+**Desafio 1:** Gerar três colunas nomeadas por "Primeiro_Nome", "T1_Sobrenome" e "T2_Sobrenome", respectivamente, 
+com registros sobre os primeiros nomes das pessoas atrizes e os sobrenomes que estão relacionados aos
+registros da coluna "Primeiro_Nome". Certifique-se que não haverá sobrenomes com o mesmo *id*.
+
+```
+SELECT 
+    t1.first_name AS `Primeiro_Nome`,
+    t1.last_name AS `T1_Sobrenome`,
+    t2.last_name AS `T2_Sobrenome`
+FROM
+    sakila.actor AS t1,
+    sakila.actor AS t2
+WHERE
+    t1.actor_id <> t2.actor_id
+        AND t1.first_name = t2.first_name;
+```
+
 ## Exercícios
 
 **Exercício 1:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nomes completos das pessoas clientes e pessoas funcionárias:
