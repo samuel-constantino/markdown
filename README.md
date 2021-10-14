@@ -206,8 +206,8 @@ E se nosso objetivo mudasse novamente e agora precisaremos manter apenas os regi
 ```
 SELECT 
     act.actor_id AS `Ator_Id`,
-    act.last_name AS Último_Nome,
-    cus.customer_id AS Cliente_Id
+    act.last_name AS `Último_Nome`,
+    cus.customer_id AS `Cliente_Id`
 FROM
     sakila.actor AS act
         INNER JOIN
