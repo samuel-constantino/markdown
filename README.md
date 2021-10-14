@@ -247,7 +247,7 @@ Dica: Pesquise e baixe bases de dados com informações relevantes para você (f
 
 ## SELF JOIN
 
-Até o momento, aprendemos sobre os tipos de **JOIN** que usam mais de uma tabela para comparar registros e gerar relatórios mais detalhados. Porém, há situações em que precisamos comparar registros da mesma tabela. Por causa disso foi criado o conceito de **SELF JOIN**, que tem como objetivo criar um **JOIN** com a própria tabela. Essa ação também é conhecida como **auto junção**.
+Até o momento, aprendemos sobre os tipos de **JOIN** que usam mais de uma tabela para comparar registros e gerar relatórios mais detalhados. Porém, há situações em que precisamos comparar registros da mesma tabela. Por causa disso foi criado o conceito de **SELF JOIN**, que tem como objetivo criar um **JOIN** com a própria tabela. Essa ação também é conhecida como **auto-junção**.
 
 A sintaxe <s>diferentona</s> básica do **SELF JOIN**:
 
