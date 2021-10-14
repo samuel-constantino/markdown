@@ -453,11 +453,17 @@ Implemente a resolução dos exercícios propostos utilizando o banco de dados [
 <br/>Observações: Nomeie as tabelas com "País" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
 <br/>Dica: Use as tabelas **countries** e **regions**.
 
-2.
-
-3. Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
+2. Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
 <br/>Obeservação: Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
 <br/>Dica: Use as tabelas **employees**, **departments** e **jobs**
+
+3. Ainda no contexto do exercício anterior, agora você recebeu um novo objetivo: gerar um relatório 
+sobre a relação entre as funções das pessoas funcionárias e seus salários. Seu relatório deve conter 
+três colunas nomeadas por "Funcionário", "Função" e "Salário". Essas colunas devem fornecer, respectivamente, 
+o nome completo das pessoas funcionárias, suas funções na empresa e seus salários.
+<br/>Observações: Gere seu relatório apenas com funcionários com salário acima ou igual a 10000. Ordene
+o resultado da *query* com a coluna "Salário" em ordem decrescente.
+<br/>Dica: Use as tabelas **employees** e **jobs**.
 
 ### Bônus
 
