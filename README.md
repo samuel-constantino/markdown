@@ -295,7 +295,9 @@ O resultado da consulta acima será parecido com o seguinte formato:
 
 ```
 SELECT 
-    t1.length, t1.title, t2.title
+    t1.length AS `Tamanho`,
+    t1.title AS `T1_Título`,
+    t2.title AS `T2_Título`
 FROM
     sakila.film AS t1,
     sakila.film AS t2
@@ -304,6 +306,11 @@ WHERE
         AND t1.length = t2.length;
 
 ```
+O resultado da consulta acima será parecido com o seguinte formato:
+
+<div align="center">
+  <img src="https://i.ibb.co/BcCxB75/Captura-de-tela-de-2021-10-13-23-12-50.png" alt="consulta-self-join-exemplo-2" width="400"/>
+</div>
 
 ### Desafios
 
