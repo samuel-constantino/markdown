@@ -133,16 +133,12 @@ ORDER BY `País`;
 
 ```
 
-**Exercício 2:**
-
-### Solução
-
-**Exercício 3:** Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
+**Exercício 2:** Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
 <br/>Obeservação: Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
 <br/>Dica: Use as tabelas **employees**, **departments** e **jobs**
 
 ### Solução
-
+```
 SELECT 
     emp.EMPLOYEE_ID AS `Funcionário_Id`,
     CONCAT(emp.FIRST_NAME, ' ', LAST_NAME) AS `Funcionário`,
@@ -155,18 +151,38 @@ FROM
 		INNER JOIN
 	hr.departments AS dep ON emp.DEPARTMENT_ID = dep.DEPARTMENT_ID
 ORDER BY `Funcionário`
+```
+
+**Exercício 3:** Ainda no contexto do exercício anterior, agora você recebeu um novo objetivo: gerar um relatório 
+sobre a relação entre as funções das pessoas funcionárias e seus salários. Seu relatório deve conter 
+três colunas nomeadas por "Funcionário", "Função" e "Salário". Essas colunas devem fornecer, respectivamente, 
+o nome completo das pessoas funcionárias, suas funções na empresa e seus salários.
+<br/>Observações: Gere seu relatório apenas com funcionários com salário acima ou igual a 10000. Ordene
+o resultado da *query* com a coluna "Salário" em ordem decrescente.
+<br/>Dica: Use as tabelas **employees** e **jobs**.
+
+### Solução
+```
+SELECT 
+    CONCAT(emp.FIRST_NAME, ' ', emp.LAST_NAME) AS `Funcionário`,
+    job.JOB_TITLE AS `Função`,
+    emp.SALARY AS `Salário`
+FROM
+    hr.employees AS emp
+		INNER JOIN
+	hr.jobs AS job ON emp.JOB_ID = job.JOB_ID
+WHERE job.MIN_SALARY >= 10000
+ORDER BY `Salário` DESC;
+
+```
 
 **Exercício 4:**
 
 ### Solução
 
-**Exercício 5:**
-
-### Solução
-
 ## Bônus
 
-**Exercício 6:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nomes completos das pessoas clientes e pessoas funcionárias:
+**Exercício 5:** Crie uma query que gere o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nomes completos das pessoas clientes e pessoas funcionárias:
 <br/>Dica: Utilize as tabelas **rental**, **inventory**, **film**, **staff**.
 <br/>Dica: Utilize mais de um **JOIN**.
 
@@ -190,7 +206,7 @@ FROM
 
 ```
 
-**Exercício 7:** Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros sobre o nome completo das pessoas Atrizes que possuam o mesmo nome completo dos clientes, e os *ids* das pessoas Atrizes e Clientes.
+**Exercício 6:** Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros sobre o nome completo das pessoas Atrizes que possuam o mesmo nome completo dos clientes, e os *ids* das pessoas Atrizes e Clientes.
 Dica: Use as tabelas **actor** e **customer**.
 
 ### Solução
