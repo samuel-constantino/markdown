@@ -450,7 +450,7 @@ $ git pull
 Implemente a resolução dos exercícios propostos utilizando o banco de dados [hr](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/hr-cebf8bc2a5bb252bc470ae28943604c6.sql).
 
 1. Imagine a seguinte situação: Você está desenvolvendo uma aplicação que precisa buscar informações sobre os nomes dos países presentes em um banco de dados relacional e suas respectivas regiões. Mas essas informações estão em tabelas diferentes. Como você criaria uma *query* resolver essa situação?
-<br/>Observações: Nomeie as tabelas com "Páis" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
+<br/>Observações: Nomeie as tabelas com "País" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
 <br/>Dica: Use as tabelas **countries** e **regions**.
 
 ### Bônus
