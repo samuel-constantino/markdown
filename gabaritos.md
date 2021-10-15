@@ -176,9 +176,22 @@ ORDER BY `Salário` DESC;
 
 ```
 
-**Exercício 4:**
+**Exercício 4:** 4. Agora você precisa gerar um relatório que mostre duas colunas nomeadas por "T1_Colaboradoras" e "T2_Colaboradoras" com relações entre os registros da mesma tabela. Retorne às colunas com os nomes completos das pessoas colaboradoras que possuem os primeiros nomes iguais e que a primeira letra do segundo nome da primeira tabela comece com a letra "A". 
 
 ### Solução
+```
+SELECT 
+    CONCAT(t1.FIRST_NAME, ' ', t1.last_name) AS `T1_Colaboradora`,
+    CONCAT(t2.FIRST_NAME, ' ', t2.last_name) AS `T2_Colaboradora`
+FROM
+    hr.employees AS t1,
+    hr.employees AS t2
+WHERE
+    t1.EMPLOYEE_ID <> t2.EMPLOYEE_ID
+        AND t1.FIRST_NAME = t2.FIRST_NAME
+        AND t1.LAST_NAME LIKE 'A%';
+            
+```
 
 ## Bônus
 
