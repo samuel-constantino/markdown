@@ -145,22 +145,22 @@ Dica: | Use as tabelas "film" e "language".
 
 2. Gerar duas colunas nomeadas por “Título” e “Categoria”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas categorias. 
 
-Dica: | Use as tabelas **film_category**, **film** e **category** e use mais de um `INNER JOIN`.
+Dica: | Use as tabelas "film_category", "film" e "category" e use mais de um `INNER JOIN`.
 ------|-----------------------------------------------------------
 
 3. Gerar duas colunas nomeadas por "Loja_Id", e "Gerente", respectivamente, com registros sobre os *ids* das lojas e os nomes completos das pessoas gerentes. 
 
-Dica: | Use as tabelas **store**, e **staff**.
+Dica: | Use as tabelas "store", e "staff".
 ------|-----------------------------------------------------------
 
 4. Gerar três colunas nomeadas por "Cliente_Id", "Cliente", e "Endereço_Loja", respectivamente, com registros sobre os *ids* das pessoas clientes, seus nomes completos e os endereços das lojas que estão cadastradas.
 
-Dica: | Use as tabelas **customer**, **store** e **address** e use mais de um `INNER JOIN`.
+Dica: | Use as tabelas "customer", "store" e "address" e use mais de um `INNER JOIN`.
 ------|-----------------------------------------------------------
 
 5. Gerar quatro colunas nomeadas por "Alugel_Id", "Filme", "Data_Aluguel" e "Data_Retorno", respectivamente, com registros sobre os *ids* dos aluguéis, os nomes dos filmes alugados e suas datas de aluguéis e devoluções.
 
-Dica: | Use as tabelas **rental**, **inventory** e **film** e use mais de um `INNER JOIN`.
+Dica: | Use as tabelas "rental", "inventory" e "film" e use mais de um `INNER JOIN`.
 ------|-----------------------------------------------------------
 
 ## `LEFT JOIN` e `RIGHT JOIN`
@@ -486,7 +486,7 @@ Implemente a resolução dos exercícios propostos utilizando o banco de dados [
 Observações: | Nomeie as tabelas com "País" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
 ------|-----------------------------------------------------------
 
-Dica: | Use as tabelas **countries** e **regions**.
+Dica: | Use as tabelas "countries" e "regions".
 ------|-----------------------------------------------------------
 
 
@@ -495,7 +495,7 @@ Dica: | Use as tabelas **countries** e **regions**.
 Obeservação: | Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
 ------|-----------------------------------------------------------
 
-Dica: | Use as tabelas **employees**, **departments** e **jobs**
+Dica: | Use as tabelas "employees", "departments" e "jobs".
 ------|-----------------------------------------------------------
 
 3. Ainda no contexto do exercício anterior, agora você recebeu um novo objetivo: gerar um relatório 
@@ -505,7 +505,7 @@ o nome completo das pessoas funcionárias, suas funções na empresa e seus sal�
 <br/>Observações: Gere seu relatório apenas pessoas funcionárias com salário acima ou igual a 10000. Ordene
 o resultado da *query* com a coluna "Salário" em ordem decrescente.
 
-Dica: | Use as tabelas **employees** e **jobs**.
+Dica: | Use as tabelas "employees" e "jobs".
 ------|-----------------------------------------------------------
 
 ### Bônus
@@ -514,8 +514,11 @@ Dica: | Use as tabelas **employees** e **jobs**.
 
 7. Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros o mesmo nome completo entre as colunas, e os *ids* das pessoas Atrizes e Clientes.
 
-Dica: | Use as tabelas **actor** e **customer**.
+Dica: | Use as tabelas "actor" e "customer".
 ------|-----------------------------------------------------------
 
 # Recursos adicionais (opcional)
+
+1. Tenha outra perspectiva sobre JOIN com [w3schools](https://www.w3schools.com/sql/sql_join.asp).
+2. 
 
