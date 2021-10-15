@@ -136,22 +136,29 @@ Para os desafios a seguir, também será utilizado o banco de dados público [sa
 Implemente *queries* utilizando o `INNER JOIN` para:
 
 1. Gerar duas colunas nomeadas por “Título” e “Língua”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas línguas. 
-<br/>Dica: Use as tabelas **film** e **language**.
+
+Dica: | Use as tabelas "film" e "language".
+------|-----------------------------------------------------------
 
 2. Gerar duas colunas nomeadas por “Título” e “Categoria”, respectivamente, com registros sobre os títulos dos filmes e os nomes de suas categorias. 
-<br/>Dica: Use as tabelas **film_category**, **film** e **category**.
-<br/>Dica: Use mais de um `INNER JOIN`.
+
+Dica: | Use as tabelas **film_category**, **film** e **category** e use mais de um `INNER JOIN`.
+------|-----------------------------------------------------------
 
 3. Gerar duas colunas nomeadas por "Loja_Id", e "Gerente", respectivamente, com registros sobre os *ids* das lojas e os nomes completos das pessoas gerentes. 
-<br/>Dica: Use as tabelas **store**, e **staff**.
+
+Dica: | Use as tabelas **store**, e **staff**.
+------|-----------------------------------------------------------
 
 4. Gerar três colunas nomeadas por "Cliente_Id", "Cliente", e "Endereço_Loja", respectivamente, com registros sobre os *ids* das pessoas clientes, seus nomes completos e os endereços das lojas que estão cadastradas.
-<br/>Dica: Use as tabelas **customer**, **store** e **address**.
-<br/>Dica: Use mais de um `INNER JOIN`.
+
+Dica: | Use as tabelas **customer**, **store** e **address** e use mais de um `INNER JOIN`.
+------|-----------------------------------------------------------
 
 5. Gerar quatro colunas nomeadas por "Alugel_Id", "Filme", "Data_Aluguel" e "Data_Retorno", respectivamente, com registros sobre os *ids* dos aluguéis, os nomes dos filmes alugados e suas datas de aluguéis e devoluções.
-<br/>Dica: Use as tabelas **rental**, **inventory** e **film**.
-<br/>Dica: Use mais de um `INNER JOIN`.
+
+Dica: | Use as tabelas **rental**, **inventory** e **film** e use mais de um `INNER JOIN`.
+------|-----------------------------------------------------------
 
 ## `LEFT JOIN` e `RIGHT JOIN`
 
@@ -264,7 +271,8 @@ O resultado da consulta acima será parecido com o seguinte formato:
 
 Os diferentes tipos de **JOIN** podem parecer confusos no início do aprendizado. Sinta-se à vontade para ler quantas vezes forem necessárias, reflita um pouco sobre os conceitos aprendidos até o momento e sempre pratique para complementar e consolidar sua leitura.
 
-Dica: Pesquise e baixe bases de dados com informações relevantes para você (filmes, jogos, criptomoedas, etc.) e aplique os conceitos que vem aprendendo nesses bancos de dados. Personalize seus estudos para torná-los mais interessantes!
+Dica: | Pesquise e baixe bases de dados com informações relevantes para você (filmes, jogos, criptomoedas, etc.) e aplique os conceitos que vem aprendendo nesses bancos de dados. Personalize seus estudos para torná-los mais interessantes!
+------|-----------------------------------------------------------
 
 ## SELF JOIN
 
@@ -471,12 +479,21 @@ $ git pull
 Implemente a resolução dos exercícios propostos utilizando o banco de dados [hr](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sql/hr-cebf8bc2a5bb252bc470ae28943604c6.sql).
 
 1. Imagine a seguinte situação: Você está desenvolvendo uma aplicação que precisa buscar informações sobre os nomes dos países presentes em um banco de dados relacional e suas respectivas regiões. Mas essas informações estão em tabelas diferentes. Como você criaria uma *query* resolver essa situação?
-<br/>Observações: Nomeie as tabelas com "País" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
-<br/>Dica: Use as tabelas **countries** e **regions**.
+
+Observações: | Nomeie as tabelas com "País" e "Região" e certifique-se de ordenar a query pelo **país** de forma ascendente.
+------|-----------------------------------------------------------
+
+Dica: | Use as tabelas **countries** e **regions**.
+------|-----------------------------------------------------------
+
 
 2. Imagine agora que você faz parte do time de Recursos Humanos de uma grande empresa. Seu objetivo para hoje é gerar um relatório com o quatro colunas nomeadas por "Funcionário_Id", "Funcionário", "Função", e "Departamento". Essas colunas devem gerar, respectivamente, os *ids* das pessoas funcionárias, seus nomes completos, os nomes de suas funções e seus departamentos.
-<br/>Obeservação: Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
-<br/>Dica: Use as tabelas **employees**, **departments** e **jobs**
+
+Obeservação: | Ordene o resultado da sua *query* pela coluna "Funcionário" em ordem alfabética.
+------|-----------------------------------------------------------
+
+Dica: | Use as tabelas **employees**, **departments** e **jobs**
+------|-----------------------------------------------------------
 
 3. Ainda no contexto do exercício anterior, agora você recebeu um novo objetivo: gerar um relatório 
 sobre a relação entre as funções das pessoas funcionárias e seus salários. Seu relatório deve conter 
@@ -484,14 +501,18 @@ três colunas nomeadas por "Funcionário", "Função" e "Salário". Essas coluna
 o nome completo das pessoas funcionárias, suas funções na empresa e seus salários.
 <br/>Observações: Gere seu relatório apenas pessoas funcionárias com salário acima ou igual a 10000. Ordene
 o resultado da *query* com a coluna "Salário" em ordem decrescente.
-<br/>Dica: Use as tabelas **employees** e **jobs**.
+
+Dica: | Use as tabelas **employees** e **jobs**.
+------|-----------------------------------------------------------
 
 ### Bônus
 
 6. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo das pessoas funcionárias e clientes. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
 
 7. Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros o mesmo nome completo entre as colunas, e os *ids* das pessoas Atrizes e Clientes.
-Dica: Use as tabelas **actor** e **customer**.
+
+Dica: | Use as tabelas **actor** e **customer**.
+------|-----------------------------------------------------------
 
 # Recursos adicionais (opcional)
 
