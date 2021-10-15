@@ -497,7 +497,7 @@ Obeservação: | Ordene o resultado da sua *query* pela coluna "Funcionário" em
 Dica: | Use as tabelas "employees", "departments" e "jobs".
 ------|-----------------------------------------------------------
 
-3. Ainda no contexto do exercício anterior, agora você recebeu um novo objetivo: gerar um relatório 
+3. Ainda no contexto do exercício anterior, você recebeu um novo objetivo: gerar um relatório 
 sobre a relação entre as funções das pessoas funcionárias e seus salários. Seu relatório deve conter 
 três colunas nomeadas por "Funcionário", "Função" e "Salário". Essas colunas devem fornecer, respectivamente, 
 o nome completo das pessoas funcionárias, suas funções na empresa e seus salários.
