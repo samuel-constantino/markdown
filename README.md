@@ -507,11 +507,16 @@ o resultado da *query* com a coluna "Salário" em ordem decrescente.
 Dica: | Use as tabelas "employees" e "jobs".
 ------|-----------------------------------------------------------
 
+4. Agora você precisa gerar um relatório que mostre duas colunas nomeadas por "T1_Colaboradoras" e "T2_Colaboradoras" com relações entre os registros da mesma tabela. Retorne às colunas com os nomes completos das pessoas colaboradoras que possuem os primeiros nomes iguais e que a primeira letra do segundo nome da primeira tabela comece com a letra "A". 
+ 
+ Dica: | Use a tabela "employees"
+ ----- | -------------------------
+
 ### Bônus
 
-6. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo das pessoas funcionárias e clientes. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
+5. Gerar o histórico de aluguéis de filmes utilizando o INNER JOIN para retornar quatro colunas nomeadas por "Aluguel_Id", "Filme", "Cliente" e “Funcionário”. As colunas devem possuir, respectivamente, registros sobre os *ids* dos aluguéis, nomes dos filmes, nome completo das pessoas funcionárias e clientes. Utilize as tabelas **rental**, **inventory**, **film**, **staff**: 
 
-7. Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros o mesmo nome completo entre as colunas, e os *ids* das pessoas Atrizes e Clientes.
+6. Utilize o INNER JOIN para retornar o resultado de uma *query* que mostre três colunas nomeadas por "Nome_Completo", "Atriz_Id", "Cliente_Id". As colunas devem possuir, respectivamente, registros o mesmo nome completo entre as colunas, e os *ids* das pessoas Atrizes e Clientes.
 
 Dica: | Use as tabelas "actor" e "customer".
 ------|-----------------------------------------------------------
@@ -519,5 +524,6 @@ Dica: | Use as tabelas "actor" e "customer".
 # Recursos adicionais (opcional)
 
 1. Tenha outra perspectiva sobre JOIN com a documentação do [w3schools](https://www.w3schools.com/sql/sql_join.asp).
-2. Acesse o conteúdo [SQL JOIN(INNER, LEFT, RIGHT e FULL) combinando tabelas!](SQL JOIN(INNER, LEFT, RIGHT e FULL) combinando tabelas!) no Blog da Trybe
+
+2. Acesse o conteúdo [SQL JOIN(INNER, LEFT, RIGHT e FULL) combinando tabelas!](https://blog.betrybe.com/sql/sql-join/) no Blog da Trybe.
 
