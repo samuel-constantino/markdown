@@ -88,6 +88,9 @@ boa prática, pois torna o nome das colunas mais legíveis e facilita usá-las e
 
 Para os exemplos a seguir, será utilizado o banco de dados público [sakila](https://s3.us-east-2.amazonaws.com/assets.app.betrybe.com/back-end/sakila-1ae15ae82697888c35bf1f1c8acbf755.sql).
 
+Dica: | Para restaurar o banco de dados baixe o arquivo *sql* acima e siga [este tutorial](https://dev.mysql.com/doc/workbench/en/wb-admin-export-import-management.html) ou consulte o conteúdo 19.1 aqui no Course.
+------|-----------------------------------------------------
+
 1. Utilize INNER JOIN para gerar duas colunas. As colunas devem buscar, respectivamente, os nomes das cidades (**city**) e o país referente a cada cidade (**country**).
 
 ```
