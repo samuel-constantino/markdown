@@ -358,7 +358,6 @@ registros da coluna "Primeiro_Nome". Certifique-se que não haverá sobrenomes c
 Chegou o momento de acompanhar a aula ao vivo! Acesse o link disponível no canal da sua turma, no Slack.
 
 # Exercícios
-back-end
 
 ## Antes de começar: versionando seu código
 
