@@ -116,8 +116,8 @@ Também é possível utilizar o INNER JOIN mais de uma vez na mesma *query*, seg
 ```
 SELECT 
     CONCAT(cus.first_name, ' ', cus.last_name) AS `Nome_Completo`,
-    adr.address AS Endereço,
-    cit.city AS Cidade
+    adr.address AS `Endereço`,
+    cit.city AS `Cidade`
 FROM
     sakila.customer AS cus
         INNER JOIN
@@ -196,8 +196,8 @@ Nesse caso, precisamos que todos os registros das colunas da **esquerda** sejam 
 ```
 SELECT 
     act.actor_id AS `Atriz_Id`,
-    act.last_name AS Último_Nome,
-    cus.customer_id AS Cliente_Id
+    act.last_name AS `Último_Nome`,
+    cus.customer_id AS `Cliente_Id`
 FROM
     sakila.actor AS act
         LEFT JOIN
@@ -218,8 +218,8 @@ Se o nosso objetivo fosse manter todos os registros das colunas da **direita**, 
 ```
 SELECT 
     act.actor_id AS `Ator_Id`,
-    act.last_name AS Último_Nome,
-    cus.customer_id AS Cliente_Id
+    act.last_name AS `Último_Nome`,
+    cus.customer_id AS `Cliente_Id`
 FROM
     sakila.actor AS act
         RIGHT JOIN
