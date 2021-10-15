@@ -518,6 +518,6 @@ Dica: | Use as tabelas "actor" e "customer".
 
 # Recursos adicionais (opcional)
 
-1. Tenha outra perspectiva sobre JOIN com [w3schools](https://www.w3schools.com/sql/sql_join.asp).
-2. 
+1. Tenha outra perspectiva sobre JOIN com a documentação do [w3schools](https://www.w3schools.com/sql/sql_join.asp).
+2. Acesse o conteúdo [SQL JOIN(INNER, LEFT, RIGHT e FULL) combinando tabelas!](SQL JOIN(INNER, LEFT, RIGHT e FULL) combinando tabelas!) no Blog da Trybe
 
